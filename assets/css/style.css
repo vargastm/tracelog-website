@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-  display: flex;
   max-width: 960px;
   margin: 0 auto;
+  display: flex;
 }
 
 .header {
@@ -26,6 +28,7 @@ body {
   content: "";
   position: absolute;
   width: 100%;
+  max-width: 960px;
   height: 3px;
   bottom: -5px;
   left: 0;
@@ -43,12 +46,8 @@ body {
   transform: scaleX(1);
 }
 
-.menu-logo {
-  margin: 0 10px;
-}
-
 .menu-logo img {
-  width: 115px;
+  width: 100px;
 }
 
 .menu-nav {
@@ -68,15 +67,17 @@ body {
 
 .introduction {
   width: 100%;
-  height: 450px;
+  height: 410px;
   background: url(../images/imagetest.jpeg) no-repeat center;
   background-size: cover;
   text-align: center;
-  margin-top: 99px;
+  margin-top: 90px;
   padding: 150px;
 }
 
 .introduction h1 {
+  margin: 0 auto;
+  max-width: 960px;
   font-size: 3em;
   color: #FFFFFF;
   font-weight: bold;
@@ -102,10 +103,101 @@ body {
   display: block;
   width: 140px;
   height: 40px;
-  margin: 0 auto;
+  margin: 0 auto 64px auto;
   color: #FFFFFF;
   text-align: center;
   background: #E28D17;
   border-radius: 50px;
   padding: 10px 0;
+}
+
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  margin: 64px 0 32px 0;
+  font-size : 1.5em;
+  text-align: center;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 14px auto 10px auto;
+}
+
+.about h3 {
+  font-size : 1.125em;
+  font-weight: bold;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.about p {
+  text-align: center;
+  margin: 16px 0 32px 0;
+  line-height: 25px;
+}
+
+.services {
+  width: 100%;
+  background: #393939;
+  color: #FFFFFF;
+}
+
+.services h2 {
+  padding: 64px 0 32px 0;
+  font-size : 1.5em;
+  text-align: center;
+}
+
+.services h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #FFFFFF;
+  margin: 14px auto 10px auto;
+}
+
+.services h3 {
+  margin: 0 auto 32px auto;
+  max-width: 500px;
+  text-align: center;
+  font-size : 1.125em;
+}
+
+.services ul {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.services ul li {
+  max-width: 300px;
+  text-align: center;
+}
+.services ul li h4 {
+  font-weight: bold;
+}
+.services ul li p {
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+.services img {
+  width: 70px;
+  margin: 0 auto 16px auto;
+  background: #E28D17;
+  padding: 10px;
+  border-radius: 50%;
 }
