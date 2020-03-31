@@ -69,6 +69,13 @@ body {
   margin-left: 25px;
 }
 
+#menu-mobile {
+  display: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  float: right;
+}
+
 /* Introduction */
 .introduction {
   width: 100%;
@@ -172,6 +179,7 @@ body {
 .services {
   background: #393939;
   color: #FFFFFF;
+  padding-bottom: 0.1px;
 }
 
 .services h3, .benefits h3 {
@@ -359,4 +367,131 @@ body {
   text-align: center;
   margin-top: 20px;
   font-size: 0.875em;
+}
+
+/* Responsiveness*/
+@media only screen and (min-width: 740px) and (max-width: 979px) {
+  /* Container Tablet */
+  .container, .services h3, .services ul, .benefits h3, .benefits ul, .about, .contact {
+    max-width: 740px;
+  }
+
+  /* Introduction Tablet */
+  .introduction h1 {
+    max-width: 740px;
+  }
+
+  /* Services and Benefits Tablet */
+  .services ul, .benefits ul {
+    justify-content: space-around;
+  }
+
+  /* Plataform Tablet */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons a:first-child {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 64px;
+  }
+
+  /* Footer Tablet */
+  .footer-storie {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  /* Container Mobile */
+  .container {
+		flex-direction: column;
+		max-width: 300px;
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  /* Menu Mobile */
+  .menu-nav ul{
+		display: none;
+	}
+	#menu-mobile {
+    display: block;
+  }
+  
+  /*Introduction Mobile */ 
+  .introduction {
+    padding: 60px 20px;
+  }
+
+  /* Services and Benefits Mobile */
+  .services ul, .benefits ul {
+    flex-direction: column;
+  }
+
+  .services ul li, .benefits ul li  {
+    margin: 0 auto;
+  }
+
+  .services h3, .benefits h3, .about {
+  max-width: 300px;
+  }
+
+  .services ul li:nth-child(n+4), .platform img {
+    display: none;
+  }
+
+  /* Plataform Mobile */
+  .platform {
+    text-align: center;
+  }
+
+  .platform div + div {
+    margin: 0;
+  }
+
+  .buttons a {
+    display: block;
+    margin: 0;
+  }
+  
+  .buttons a:first-child {
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 64px;
+  }
+
+  /* Contact Mobile */
+  .contact {
+    max-width: 300px;
+    padding: 0px;
+  }
+
+  /*Footer Mobile */
+  .footer {
+    text-align: center;
+  }
+
+  .footer h3 {
+    margin: 20px 0 16px 0;
+  }
+
+  .footer h3::after {
+  margin: 8px auto 16px auto;
+  }
+  
+  .footer-storie {
+    width: 300px;
+  }
 }
